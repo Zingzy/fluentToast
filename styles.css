@@ -1,0 +1,155 @@
+.custom-top-notification {
+    display: none;
+    padding: 5px 15px;
+    color: white;
+    z-index: 9999999999999999999999999999999;
+    border-radius: 6px;
+    max-width: 330px;
+    min-width: 280px;
+    margin: 20px;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide-in-left 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: slide-in-right 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: slide-in-left 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: slide-in-right 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.custom-top-notification.warning {
+    background-color: rgb(67, 53, 25);
+}
+
+.custom-top-notification.success {
+    background-color: rgb(56, 60, 26);
+}
+
+.custom-top-notification.error {
+    background-color: rgb(61, 28, 27);
+}
+
+.custom-top-notification.info {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
+}
+
+.custom-top-notification .closebtn {
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.custom-top-notification.warning .closebtn:hover {
+    color: rgb(250, 225, 0);
+}
+
+.custom-top-notification.success .closebtn:hover {
+    color: rgb(106, 203, 93);
+}
+
+.custom-top-notification.error .closebtn:hover {
+    color: rgb(255, 153, 163);
+}
+
+.custom-top-notification.info .closebtn:hover {
+    color: rgb(92, 189, 236);
+}
+
+
+.custom-top-notification p {
+    margin: 5px 0;
+    color: white;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-weight: normal;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.custom-top-notification .close-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    margin: 0 0;
+}
+
+.custom-top-notification.warning .close-progress-bar {
+    background: rgb(250, 225, 0);
+}
+
+.custom-top-notification.success .close-progress-bar {
+    background: rgb(106, 203, 93);
+}
+
+.custom-top-notification.error .close-progress-bar {
+    background: rgb(255, 153, 163);
+}
+
+.custom-top-notification.info .close-progress-bar {
+    background: rgb(92, 189, 236);
+}
+
+@keyframes progress-bar-animation {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
