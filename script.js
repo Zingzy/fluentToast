@@ -61,7 +61,7 @@ function displayNotification(id, text, duration, type, soundAlert) {
     }, duration * 1000 - 200);
 }
 
-function fluentToast(Id, text, duration, type="info", soundAlert=true) {
+function fluentToast(Id, text, duration=10, type="info", soundAlert=true) {
     var element = document.getElementById("customNotification"+Id);
     if (element) {
         element.getElementsByClassName("closebtn")[0].onclick();
