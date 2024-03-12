@@ -67,6 +67,13 @@ fluentToast("Toast1", "Hello this is a test!", 10, "warning");
 
 The `Id` parementer is important as it acts as a unique identifier for the toast. It also acts as a notification spam filter. If a toast with the same `Id` is already present, the new toast will replace it and the duration will be reset.
 
+## ⛔ Limitations
+
+- The library is not yet fully responsive
+- The library is not yet fully customizable
+- The Toast Notification sound does not play if the user have not interacted with the page at least once
+- The Toast Notification does not have a closing animation
+
 ## 🤩 Upcoming Features
 
 - Notification Actions
@@ -75,10 +82,13 @@ The `Id` parementer is important as it acts as a unique identifier for the toast
 - Persistant Toats
 - Custom sound alerts
 - Toast Icon
+- Closing Animation
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! Feel free to open a PR or submit an issue.
+Contributions, issues and feature requests are welcome! Feel free to [open a PR](https://github.com/Zingzy/fluentToast/pulls) or [submit an issue](https://github.com/Zingzy/fluentToast/issues/new).
+
+You may also join the [Discord Server](https://spoo.me/discord) to discuss new features, issues and more.
 
 ---
 
